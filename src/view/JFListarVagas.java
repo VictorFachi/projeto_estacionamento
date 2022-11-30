@@ -10,7 +10,7 @@ import model.dao.VagaDAO;
 import model.bean.Vaga;
 /**
  *
- * @author 03832903097
+ * @author 04031923074
  */
 public class JFListarVagas extends javax.swing.JFrame {
 
@@ -73,7 +73,7 @@ public class JFListarVagas extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTVaga);
         jTVaga.getAccessibleContext().setAccessibleName("");
 
-        jBtnCadastrar.setFont(new java.awt.Font("Corbel Light", 0, 14)); // NOI18N
+        jBtnCadastrar.setFont(new java.awt.Font("Javanese Text", 0, 14)); // NOI18N
         jBtnCadastrar.setText("Cadastrar Vaga");
         jBtnCadastrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -81,7 +81,7 @@ public class JFListarVagas extends javax.swing.JFrame {
             }
         });
 
-        jBtnEditar.setFont(new java.awt.Font("Corbel Light", 0, 14)); // NOI18N
+        jBtnEditar.setFont(new java.awt.Font("Javanese Text", 0, 14)); // NOI18N
         jBtnEditar.setText("Editar Vaga");
         jBtnEditar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -89,7 +89,7 @@ public class JFListarVagas extends javax.swing.JFrame {
             }
         });
 
-        jBtnExcluir.setFont(new java.awt.Font("Corbel Light", 0, 14)); // NOI18N
+        jBtnExcluir.setFont(new java.awt.Font("Javanese Text", 0, 14)); // NOI18N
         jBtnExcluir.setText("Excluir Vaga");
         jBtnExcluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -129,7 +129,7 @@ public class JFListarVagas extends javax.swing.JFrame {
                     .addComponent(jBtnCadastrar)
                     .addComponent(jBtnEditar)
                     .addComponent(jBtnExcluir))
-                .addContainerGap(181, Short.MAX_VALUE))
+                .addContainerGap(167, Short.MAX_VALUE))
         );
 
         pack();

@@ -8,7 +8,7 @@ import model.bean.Motorista;
 import model.dao.MotoristaDAO;
 /**
  *
- * @author 03832903097
+ * @author 04031923074
  */
 public class JFAtualizarMotorista extends javax.swing.JFrame {
      public static int idMotorista;
@@ -61,28 +61,28 @@ public class JFAtualizarMotorista extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI Black", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI Historic", 1, 24)); // NOI18N
         jLabel1.setText("Atualizar Motorista");
 
-        jLabel2.setFont(new java.awt.Font("Gabriola", 0, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Javanese Text", 0, 14)); // NOI18N
         jLabel2.setText("Nome");
 
-        jLabel3.setFont(new java.awt.Font("Gabriola", 0, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Javanese Text", 0, 14)); // NOI18N
         jLabel3.setText("Gênero");
 
-        jLabel4.setFont(new java.awt.Font("Gabriola", 0, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Javanese Text", 0, 14)); // NOI18N
         jLabel4.setText("RG");
 
-        jLabel5.setFont(new java.awt.Font("Gabriola", 0, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Javanese Text", 0, 14)); // NOI18N
         jLabel5.setText("CPF");
 
-        jLabel6.setFont(new java.awt.Font("Gabriola", 0, 14)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Javanese Text", 0, 14)); // NOI18N
         jLabel6.setText("Celular");
 
-        jLabel7.setFont(new java.awt.Font("Gabriola", 0, 14)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Javanese Text", 0, 14)); // NOI18N
         jLabel7.setText("E-mail");
 
-        jLabel8.setFont(new java.awt.Font("Gabriola", 0, 14)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Javanese Text", 0, 14)); // NOI18N
         jLabel8.setText("Senha");
 
         jTFNome.setBackground(new java.awt.Color(204, 204, 204));
@@ -98,15 +98,14 @@ public class JFAtualizarMotorista extends javax.swing.JFrame {
         jTFEmail.setBackground(new java.awt.Color(204, 204, 204));
 
         jPFSenha.setBackground(new java.awt.Color(204, 204, 204));
-        jPFSenha.setText("jPasswordField1");
 
-        jBtnCancelar.setFont(new java.awt.Font("Gabriola", 0, 18)); // NOI18N
+        jBtnCancelar.setFont(new java.awt.Font("Javanese Text", 0, 18)); // NOI18N
         jBtnCancelar.setText("Cancelar");
 
-        jBtnLimpar.setFont(new java.awt.Font("Gabriola", 0, 18)); // NOI18N
+        jBtnLimpar.setFont(new java.awt.Font("Javanese Text", 0, 18)); // NOI18N
         jBtnLimpar.setText("Limpar");
 
-        jBtnSalvar.setFont(new java.awt.Font("Gabriola", 0, 18)); // NOI18N
+        jBtnSalvar.setFont(new java.awt.Font("Javanese Text", 0, 18)); // NOI18N
         jBtnSalvar.setText("Atualizar");
         jBtnSalvar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -114,66 +113,67 @@ public class JFAtualizarMotorista extends javax.swing.JFrame {
             }
         });
 
-        lblIdMotorista.setFont(new java.awt.Font("Corbel Light", 0, 12)); // NOI18N
+        lblIdMotorista.setFont(new java.awt.Font("Courier New", 0, 12)); // NOI18N
         lblIdMotorista.setText("Id Motorista");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(79, 79, 79)
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(65, 65, 65))
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel5)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addGap(18, 18, 18)
-                        .addComponent(jTFNome))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel3)
-                        .addGap(11, 11, 11)
-                        .addComponent(jTFGenero))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel6)
-                            .addComponent(jLabel7))
-                        .addGap(12, 12, 12)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTFEmail)
-                            .addComponent(jTFCelular)
-                            .addComponent(jTFCpf)
-                            .addComponent(jTFRg)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel8)
-                        .addGap(18, 18, 18)
-                        .addComponent(jPFSenha))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(75, 75, 75)
-                        .addComponent(jBtnSalvar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jBtnLimpar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jBtnCancelar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(70, 70, 70)))
-                .addContainerGap())
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(lblIdMotorista)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel5)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel2)
+                                .addGap(18, 18, 18)
+                                .addComponent(jTFNome))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel3)
+                                .addGap(11, 11, 11)
+                                .addComponent(jTFGenero))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel4)
+                                    .addComponent(jLabel6)
+                                    .addComponent(jLabel7))
+                                .addGap(12, 12, 12)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jTFEmail)
+                                    .addComponent(jTFCelular)
+                                    .addComponent(jTFCpf)
+                                    .addComponent(jTFRg)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel8)
+                                .addGap(18, 18, 18)
+                                .addComponent(jPFSenha))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGap(75, 75, 75)
+                                .addComponent(jBtnSalvar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jBtnLimpar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jBtnCancelar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGap(70, 70, 70))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(66, 66, 66)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(15, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblIdMotorista)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)

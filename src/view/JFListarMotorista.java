@@ -12,7 +12,7 @@ import model.bean.Vaga;
 import model.dao.VagaDAO;
 /**
  *
- * @author 03832903097
+ * @author 04031923074
  */
 public class JFListarMotorista extends javax.swing.JFrame {
 
@@ -77,10 +77,10 @@ public class JFListarMotorista extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(jTMotorista);
 
-        jBtnCadastrar.setFont(new java.awt.Font("Corbel Light", 0, 14)); // NOI18N
+        jBtnCadastrar.setFont(new java.awt.Font("Javanese Text", 0, 14)); // NOI18N
         jBtnCadastrar.setText("Cadastrar Motorista");
 
-        jBtnEditar.setFont(new java.awt.Font("Corbel Light", 0, 14)); // NOI18N
+        jBtnEditar.setFont(new java.awt.Font("Javanese Text", 0, 14)); // NOI18N
         jBtnEditar.setText("Editar Motorista");
         jBtnEditar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -88,7 +88,7 @@ public class JFListarMotorista extends javax.swing.JFrame {
             }
         });
 
-        jBtnExcluir.setFont(new java.awt.Font("Corbel Light", 0, 14)); // NOI18N
+        jBtnExcluir.setFont(new java.awt.Font("Javanese Text", 0, 14)); // NOI18N
         jBtnExcluir.setText("Excluir Motorista");
         jBtnExcluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -101,17 +101,20 @@ public class JFListarMotorista extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 579, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(204, 204, 204)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addContainerGap()
                         .addComponent(jBtnCadastrar)
-                        .addGap(18, 18, 18)
-                        .addComponent(jBtnEditar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jBtnExcluir)
-                        .addGap(20, 20, 20)))
+                        .addComponent(jBtnEditar)
+                        .addGap(98, 98, 98)
+                        .addComponent(jBtnExcluir)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -119,14 +122,14 @@ public class JFListarMotorista extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addGap(18, 18, 18)
+                .addGap(30, 30, 30)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jBtnCadastrar)
                     .addComponent(jBtnEditar)
+                    .addComponent(jBtnCadastrar)
                     .addComponent(jBtnExcluir))
-                .addContainerGap(104, Short.MAX_VALUE))
+                .addContainerGap(187, Short.MAX_VALUE))
         );
 
         pack();

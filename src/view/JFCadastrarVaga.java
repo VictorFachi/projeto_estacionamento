@@ -8,7 +8,7 @@ import model.bean.Vaga;
 import model.dao.VagaDAO;
 /**
  *
- * @author 03832903097
+ * @author 04031923074
  */
 public class JFCadastrarVaga extends javax.swing.JFrame {
 
@@ -46,7 +46,7 @@ public class JFCadastrarVaga extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Frank Ruhl Hofshi", 0, 36)); // NOI18N
         jLabel1.setText("Cadastrar Vaga");
 
-        jLabel2.setText("Número");
+        jLabel2.setText("Número:");
 
         jTFNumero.setFont(new java.awt.Font("Gabriola", 0, 14)); // NOI18N
         jTFNumero.setName(""); // NOI18N
@@ -56,7 +56,7 @@ public class JFCadastrarVaga extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setText("Rua");
+        jLabel3.setText("Rua:");
 
         jTFRua.setFont(new java.awt.Font("Gabriola", 0, 14)); // NOI18N
         jTFRua.addActionListener(new java.awt.event.ActionListener() {
@@ -65,7 +65,7 @@ public class JFCadastrarVaga extends javax.swing.JFrame {
             }
         });
 
-        jLabel4.setText("Tipo de Vaga ");
+        jLabel4.setText("Tipo de Vaga:");
 
         BGTipoVaga.add(jRBObliqua);
         jRBObliqua.setText("Obliqua");
@@ -99,24 +99,24 @@ public class JFCadastrarVaga extends javax.swing.JFrame {
                                     .addComponent(jLabel3))
                                 .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jTFNumero, javax.swing.GroupLayout.DEFAULT_SIZE, 114, Short.MAX_VALUE)
-                                    .addComponent(jTFRua)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel4)
-                                .addGap(18, 18, 18)
-                                .addComponent(jRBObliqua)
-                                .addGap(18, 18, 18)
-                                .addComponent(jRBParalela))
+                                    .addComponent(jTFRua, javax.swing.GroupLayout.DEFAULT_SIZE, 196, Short.MAX_VALUE)
+                                    .addComponent(jTFNumero)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(63, 63, 63)
-                                .addComponent(jLabel1)))
+                                .addComponent(jLabel1))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(jBtnLimpar)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(jLabel4)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(jRBObliqua)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(jRBParalela))))
                         .addGap(0, 72, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGap(58, 58, 58)
                         .addComponent(jBtnSalvar)
-                        .addGap(18, 18, 18)
-                        .addComponent(jBtnLimpar)
-                        .addGap(18, 18, 18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jBtnCancelar)))
                 .addContainerGap())
         );
@@ -134,11 +134,10 @@ public class JFCadastrarVaga extends javax.swing.JFrame {
                     .addComponent(jLabel3)
                     .addComponent(jTFRua, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jRBObliqua)
-                        .addComponent(jRBParalela)))
+                    .addComponent(jRBObliqua)
+                    .addComponent(jRBParalela))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jBtnCancelar)

@@ -28,52 +28,55 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="lblIdVaga" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="jRBObliqua" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="jRBParalela" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace max="32767" attributes="0"/>
                               </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jTFNumero" alignment="0" pref="114" max="32767" attributes="0"/>
-                                  <Component id="jTFRua" alignment="0" max="32767" attributes="0"/>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+                                  <Component id="jBtnLimpar" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace pref="97" max="32767" attributes="0"/>
+                                  <Component id="jBtnSalvar" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="101" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
-                              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jBtnCancelar" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <Component id="lblIdVaga" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="136" max="-2" attributes="0"/>
-                                  <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" attributes="0">
-                                  <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jRBObliqua" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jRBParalela" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="jTFRua" pref="440" max="32767" attributes="0"/>
+                              <Component id="jTFNumero" max="32767" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace min="0" pref="92" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="jBtnSalvar" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jBtnLimpar" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jBtnCancelar" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace pref="59" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -117,6 +120,9 @@
   <SubComponents>
     <Component class="javax.swing.JButton" name="jBtnSalvar">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Javanese Text" size="14" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Salvar"/>
       </Properties>
       <Events>
@@ -125,11 +131,17 @@
     </Component>
     <Component class="javax.swing.JButton" name="jBtnLimpar">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Javanese Text" size="14" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Limpar"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jBtnCancelar">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Javanese Text" size="14" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Cancelar"/>
       </Properties>
     </Component>
@@ -139,7 +151,7 @@
           <ComponentRef name="bGTipoVaga"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Corbel Light" size="12" style="0"/>
+          <Font name="Javanese Text" size="14" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Paralela"/>
       </Properties>
@@ -153,7 +165,7 @@
           <ComponentRef name="bGTipoVaga"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Corbel Light" size="12" style="0"/>
+          <Font name="Javanese Text" size="14" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Obliqua"/>
       </Properties>
@@ -161,15 +173,15 @@
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Corbel Light" size="12" style="0"/>
+          <Font name="Javanese Text" size="14" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Tipo de Vaga "/>
+        <Property name="text" type="java.lang.String" value="Tipo de Vaga:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="jTFRua">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Gabriola" size="14" style="0"/>
+          <Font name="Javanese Text" size="14" style="0"/>
         </Property>
       </Properties>
       <Events>
@@ -179,15 +191,15 @@
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Corbel Light" size="12" style="0"/>
+          <Font name="Javanese Text" size="14" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Rua"/>
+        <Property name="text" type="java.lang.String" value="Rua:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="jTFNumero">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Gabriola" size="14" style="0"/>
+          <Font name="Javanese Text" size="14" style="0"/>
         </Property>
         <Property name="name" type="java.lang.String" value="" noResource="true"/>
       </Properties>
@@ -198,9 +210,9 @@
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Corbel Light" size="12" style="0"/>
+          <Font name="Javanese Text" size="14" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="N&#xfa;mero"/>
+        <Property name="text" type="java.lang.String" value="N&#xfa;mero:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
@@ -214,7 +226,7 @@
     <Component class="javax.swing.JLabel" name="lblIdVaga">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Corbel Light" size="12" style="0"/>
+          <Font name="Javanese Text" size="14" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Id da Vaga:"/>
       </Properties>
@@ -222,7 +234,7 @@
     <Component class="javax.swing.JLabel" name="jLabel5">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Corbel Light" size="12" style="0"/>
+          <Font name="Javanese Text" size="14" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="jLabel5"/>
       </Properties>

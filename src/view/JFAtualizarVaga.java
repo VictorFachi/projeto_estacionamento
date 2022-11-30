@@ -8,7 +8,7 @@ import model.bean.Vaga;
 import model.dao.VagaDAO;
 /**
  *
- * @author 03832903097
+ * @author 04031923074
  */
 public class JFAtualizarVaga extends javax.swing.JFrame {
 
@@ -58,6 +58,7 @@ public class JFAtualizarVaga extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jBtnSalvar.setFont(new java.awt.Font("Javanese Text", 0, 14)); // NOI18N
         jBtnSalvar.setText("Salvar");
         jBtnSalvar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -65,12 +66,14 @@ public class JFAtualizarVaga extends javax.swing.JFrame {
             }
         });
 
+        jBtnLimpar.setFont(new java.awt.Font("Javanese Text", 0, 14)); // NOI18N
         jBtnLimpar.setText("Limpar");
 
+        jBtnCancelar.setFont(new java.awt.Font("Javanese Text", 0, 14)); // NOI18N
         jBtnCancelar.setText("Cancelar");
 
         bGTipoVaga.add(jRBParalela);
-        jRBParalela.setFont(new java.awt.Font("Corbel Light", 0, 12)); // NOI18N
+        jRBParalela.setFont(new java.awt.Font("Javanese Text", 0, 14)); // NOI18N
         jRBParalela.setText("Paralela");
         jRBParalela.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -79,23 +82,23 @@ public class JFAtualizarVaga extends javax.swing.JFrame {
         });
 
         bGTipoVaga.add(jRBObliqua);
-        jRBObliqua.setFont(new java.awt.Font("Corbel Light", 0, 12)); // NOI18N
+        jRBObliqua.setFont(new java.awt.Font("Javanese Text", 0, 14)); // NOI18N
         jRBObliqua.setText("Obliqua");
 
-        jLabel4.setFont(new java.awt.Font("Corbel Light", 0, 12)); // NOI18N
-        jLabel4.setText("Tipo de Vaga ");
+        jLabel4.setFont(new java.awt.Font("Javanese Text", 0, 14)); // NOI18N
+        jLabel4.setText("Tipo de Vaga:");
 
-        jTFRua.setFont(new java.awt.Font("Gabriola", 0, 14)); // NOI18N
+        jTFRua.setFont(new java.awt.Font("Javanese Text", 0, 14)); // NOI18N
         jTFRua.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTFRuaActionPerformed(evt);
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Corbel Light", 0, 12)); // NOI18N
-        jLabel3.setText("Rua");
+        jLabel3.setFont(new java.awt.Font("Javanese Text", 0, 14)); // NOI18N
+        jLabel3.setText("Rua:");
 
-        jTFNumero.setFont(new java.awt.Font("Gabriola", 0, 14)); // NOI18N
+        jTFNumero.setFont(new java.awt.Font("Javanese Text", 0, 14)); // NOI18N
         jTFNumero.setName(""); // NOI18N
         jTFNumero.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -103,16 +106,16 @@ public class JFAtualizarVaga extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Corbel Light", 0, 12)); // NOI18N
-        jLabel2.setText("Número");
+        jLabel2.setFont(new java.awt.Font("Javanese Text", 0, 14)); // NOI18N
+        jLabel2.setText("Número:");
 
         jLabel1.setFont(new java.awt.Font("Frank Ruhl Hofshi", 0, 36)); // NOI18N
         jLabel1.setText("Atualizar Vaga");
 
-        lblIdVaga.setFont(new java.awt.Font("Corbel Light", 0, 12)); // NOI18N
+        lblIdVaga.setFont(new java.awt.Font("Javanese Text", 0, 14)); // NOI18N
         lblIdVaga.setText("Id da Vaga:");
 
-        jLabel5.setFont(new java.awt.Font("Corbel Light", 0, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Javanese Text", 0, 14)); // NOI18N
         jLabel5.setText("jLabel5");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -120,41 +123,42 @@ public class JFAtualizarVaga extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel2)
-                                    .addComponent(jLabel3))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jTFNumero, javax.swing.GroupLayout.DEFAULT_SIZE, 114, Short.MAX_VALUE)
-                                    .addComponent(jTFRua)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(63, 63, 63)
-                                .addComponent(jLabel1))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(lblIdVaga, javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(jLabel4)
+                                            .addGap(18, 18, 18)
+                                            .addComponent(jRBObliqua)
+                                            .addGap(18, 18, 18)
+                                            .addComponent(jRBParalela)))
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .addGroup(layout.createSequentialGroup()
-                                    .addComponent(lblIdVaga)
-                                    .addGap(136, 136, 136)
-                                    .addComponent(jLabel5))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel4)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(jRBObliqua)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(jRBParalela))))
-                        .addGap(0, 92, Short.MAX_VALUE))
+                                    .addGap(80, 80, 80)
+                                    .addComponent(jBtnLimpar)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 97, Short.MAX_VALUE)
+                                    .addComponent(jBtnSalvar)
+                                    .addGap(101, 101, 101)))
+                            .addComponent(jBtnCancelar))
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel2)
+                                .addComponent(jLabel3))
+                            .addGap(18, 18, 18)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(jTFRua, javax.swing.GroupLayout.DEFAULT_SIZE, 440, Short.MAX_VALUE)
+                                .addComponent(jTFNumero))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jBtnSalvar)
-                        .addGap(18, 18, 18)
-                        .addComponent(jBtnLimpar)
-                        .addGap(18, 18, 18)
-                        .addComponent(jBtnCancelar)))
-                .addContainerGap())
+                        .addGap(63, 63, 63)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel1))))
+                .addContainerGap(59, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

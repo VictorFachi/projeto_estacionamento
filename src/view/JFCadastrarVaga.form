@@ -39,30 +39,31 @@
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jTFNumero" pref="114" max="32767" attributes="0"/>
-                                  <Component id="jTFRua" max="32767" attributes="0"/>
+                                  <Component id="jTFRua" pref="196" max="32767" attributes="0"/>
+                                  <Component id="jTFNumero" max="32767" attributes="0"/>
                               </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jRBObliqua" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jRBParalela" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
                               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                           </Group>
+                          <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                              <Component id="jBtnLimpar" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="jRBObliqua" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="jRBParalela" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
                       </Group>
                       <EmptySpace min="0" pref="72" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
                       <Component id="jBtnSalvar" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jBtnLimpar" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                       <Component id="jBtnCancelar" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -86,12 +87,10 @@
                   <Component id="jTFRua" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                      <Component id="jRBObliqua" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jRBParalela" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jRBObliqua" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jRBParalela" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="37" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -115,7 +114,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
-        <Property name="text" type="java.lang.String" value="N&#xfa;mero"/>
+        <Property name="text" type="java.lang.String" value="N&#xfa;mero:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="jTFNumero">
@@ -131,7 +130,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Rua"/>
+        <Property name="text" type="java.lang.String" value="Rua:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="jTFRua">
@@ -146,7 +145,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Tipo de Vaga "/>
+        <Property name="text" type="java.lang.String" value="Tipo de Vaga:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="jRBObliqua">
