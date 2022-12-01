@@ -7,7 +7,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 /**
  *
- * @author 03832903097
+ * @author 04031923074
  */
 public class ConnectionFactory {
     private static final String DRIVER = "com.mysql.jdbc.Driver";

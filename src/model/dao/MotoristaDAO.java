@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import model.bean.Vaga;
 /**
  *
- * @author 03832903097
+ * @author 04031923074
  */
 public class MotoristaDAO {
     public void create(Motorista m){

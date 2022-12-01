@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author 03832903097
+ * @author 04031923074
  */
 public class VagaDAO {
     

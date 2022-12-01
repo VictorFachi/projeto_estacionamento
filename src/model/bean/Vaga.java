@@ -7,7 +7,7 @@ package model.bean;
 
 /**
  *
- * @author 03832903097
+ * @author 04031923074
  */
 public class Vaga {
    private int idVaga;
