@@ -38,6 +38,7 @@ public class JFListarVagas extends javax.swing.JFrame {
         jBtnExcluir = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Listar Vaga");
         setAlwaysOnTop(true);
         setBackground(new java.awt.Color(0, 0, 0));
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -136,6 +137,8 @@ public class JFListarVagas extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jBtnCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCadastrarActionPerformed
+        JFCadastrarVaga cv = new JFCadastrarVaga();
+        cv.setVisible(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_jBtnCadastrarActionPerformed
 

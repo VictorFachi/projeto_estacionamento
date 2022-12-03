@@ -56,7 +56,8 @@ public class JFAtualizarVaga extends javax.swing.JFrame {
         lblIdVaga = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Atualizar Vaga");
 
         jBtnSalvar.setFont(new java.awt.Font("Javanese Text", 0, 14)); // NOI18N
         jBtnSalvar.setText("Salvar");
@@ -68,9 +69,19 @@ public class JFAtualizarVaga extends javax.swing.JFrame {
 
         jBtnLimpar.setFont(new java.awt.Font("Javanese Text", 0, 14)); // NOI18N
         jBtnLimpar.setText("Limpar");
+        jBtnLimpar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnLimparActionPerformed(evt);
+            }
+        });
 
         jBtnCancelar.setFont(new java.awt.Font("Javanese Text", 0, 14)); // NOI18N
         jBtnCancelar.setText("Cancelar");
+        jBtnCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnCancelarActionPerformed(evt);
+            }
+        });
 
         bGTipoVaga.add(jRBParalela);
         jRBParalela.setFont(new java.awt.Font("Javanese Text", 0, 14)); // NOI18N
@@ -218,6 +229,18 @@ public class JFAtualizarVaga extends javax.swing.JFrame {
     private void jRBParalelaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRBParalelaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jRBParalelaActionPerformed
+
+    private void jBtnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCancelarActionPerformed
+        dispose();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBtnCancelarActionPerformed
+
+    private void jBtnLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnLimparActionPerformed
+        jTFRua.setText("");
+        jTFNumero.setText("");
+        bGTipoVaga.clearSelection();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBtnLimparActionPerformed
 
     /**
      * @param args the command line arguments
